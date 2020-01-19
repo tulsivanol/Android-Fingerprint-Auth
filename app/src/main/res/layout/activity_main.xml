@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:textSize="22sp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="Fingerprint Authentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<com.kevalpatel.passcodeview.PinView-->
+        <!--android:id="@+id/pin_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/title"-->
+        <!--app:dividerColor="@color/colorPrimaryDark"-->
+        <!--app:fingerprintDefaultText="Scan your finger to unlock application"-->
+        <!--app:fingerprintEnable="true"-->
+        <!--app:fingerprintTextColor="@color/colorAccent"-->
+        <!--app:titleTextColor="@android:color/white"/>-->
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/title"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/action_fingerprint" />
+
+    <TextView
+        android:id="@+id/para"
+        android:layout_below="@id/image_view"
+        android:textSize="18dp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="Place finger in the scanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
